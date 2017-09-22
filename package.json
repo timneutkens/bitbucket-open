@@ -1,0 +1,13 @@
+{
+  "name": "bitbucket-open",
+  "version": "0.0.4",
+  "main": "index.js",
+  "author": "Tim Neutkens",
+  "license": "MIT",
+  "bin": {
+    "bb": "cli.js"
+  },
+  "dependencies": {
+    "mz": "^2.7.0"
+  }
+}
