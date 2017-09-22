@@ -6,7 +6,7 @@ async function getBitbucketRemote() {
   const output = await exec('git remote -v')
   const lines = output[0].trim().split('\n')
   for(line of lines) {
-    const [_, bitbucketRepository] = line.match(/git@bitbucket.org:(.*\/.*).git/)
+    const [, bitbucketRepository] = line.match(/git@bitbucket.org:(.*\/.*).git/)
     if(bitbucketRepository) {
       return bitbucketRepository
     }
