@@ -30,6 +30,10 @@ async function run() {
       return await open(`${repositoryUrl}/addon/pipelines/home`)
     }
 
+    if(command === 'pr') {
+      return await open(`${repositoryUrl}/pull-requests`)
+    }
+
     if(!command || command === 'browse') {
       return await open(repositoryUrl)
     }
