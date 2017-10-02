@@ -23,3 +23,9 @@ Open pipelines for project
 ```
 bb pipelines
 ```
+
+Open pull requests for project
+
+```
+bb pr
+```
